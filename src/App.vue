@@ -31,11 +31,15 @@
 </template>
 
 <script>
+
+
+
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-
+import ApiClient from './api/index'
 
 export default {
+  
   name: 'App',
   components: {
     Navbar,
@@ -45,6 +49,12 @@ export default {
     return {
       //
     }
+  },
+    beforeCreate() {
+        ApiClient().get(`Home`)
+    .then(resp => {
+      console.log(resp.data);
+  });
   }
 }
 </script>

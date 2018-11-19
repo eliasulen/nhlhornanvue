@@ -51,7 +51,6 @@
         v-for="item in items"
         :key="item.title"
         :to="item.link"
-        @click=""
       >
         <v-list-tile-action>
           <v-icon>{{ item.icon }}</v-icon>

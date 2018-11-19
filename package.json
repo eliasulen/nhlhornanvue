@@ -7,9 +7,6 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
-  "proxy": {
-    "/api": "http://nhlhornanapi.herokuapp.com/api/"
-  },
   "dependencies": {
     "axios": "^0.18.0",
     "material-design-icons-iconfont": "^3.0.3",
